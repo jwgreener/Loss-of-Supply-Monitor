@@ -25,7 +25,9 @@ SSE_rows = SSE_soup.findAll("div", { "class" : "col-xs-12 col-sm-3 col-md-2" } )
 # Define destination array
 SSE_data = []
 
-SSE_data.append([ele.text.strip() for ele in SSE_rows])
+# Extract postcodes
+for ele in SSE_rows:
+	SSE_data.append([ele.text.strip()])
 
 # Export the results
 
