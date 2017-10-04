@@ -32,7 +32,7 @@ WP_data = []
 # Find all the cols
 for WP_row in WP_rows:
 	WP_cols = WP_row.find_all('td')
-	WP_data.append([ele.text.strip() for ele in WP_cols]) # Append rows and cols into an arrary <----------
+	WP_data.append([ele.text.strip() for ele in WP_cols]) # Append rows and cols into an arrary
 
 
 # Export the results
@@ -45,8 +45,10 @@ with open("WP_Outages.csv", "wb") as f:
     writer = csv.writer(f)
     writer.writerows(WP_data)
 
+
+
+
+
     #headers = row[0]
 
 	#data = row[1:]
-
-    

@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 UKPN_url = 'http://ukpower.ukpowernetworks.co.uk/power-cut-list'
 
 # Open Safari
-safari = webdriver.Safari()
+safari = webdriver.Chrome()
 
 safari.get(UKPN_url)
 

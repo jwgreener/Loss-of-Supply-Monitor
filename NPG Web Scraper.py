@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 NPG_url = 'http://www.northernpowergrid.com/power-cuts'
 
 # Open Safari
-safari = webdriver.Safari()
+safari = webdriver.Chrome()
 
 safari.get(NPG_url)
 
