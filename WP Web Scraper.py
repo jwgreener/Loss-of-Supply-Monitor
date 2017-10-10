@@ -34,6 +34,8 @@ for WP_row in WP_rows:
 	WP_cols = WP_row.find_all('td')
 	WP_data.append([ele.text.strip() for ele in WP_cols]) # Append rows and cols into an arrary
 
+# Lable the results
+WP_data = [['WP'] + ele for ele in WP_data]
 
 # Export the results
 
